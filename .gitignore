@@ -79,3 +79,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+TestRunner/Temp/UnityVS_obj/Debug/build.force

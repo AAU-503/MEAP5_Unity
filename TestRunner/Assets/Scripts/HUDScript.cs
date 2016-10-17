@@ -10,8 +10,13 @@ public class HUDScript : MonoBehaviour {
         playerScore += Time.deltaTime;
 	}
 
-    public void IncreaseScore(int amount)
+    public void ChangeScore(int amount)
     {
         playerScore += amount;
+    }
+
+    void OnGUI()
+    {
+        GUI.Label(new Rect(10, 10, 100, 30), "Score: " + (int)(playerScore * 100));
     }
 }
